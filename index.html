@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" initial>
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+<script type="text/javascript" src="jquery-2.2.4.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery.mobile-1.4.5.js"></script>
+
+	<title>WetterApp</title>
+
+</head>
+
+<body>
+
+<!-- HOME -->
+<div data-role="page" data-theme="c" id="home">
+
+	<div data-role="header">
+	</div>
+
+	<div role="main" class="ui-content">
+		<div id="contenido">
+			
+		</div>
+	</div>
+
+	<div data-role="footer">
+		<a href="#buscar"><img src="lista.png" alt="Smiley face" width="10" class="botonlista"></a> 
+	</div>
+</div>
+
+<!-- HOME -->
+
+
+<!-- BUSCAR -->
+
+<div data-role="page" id="buscar">
+
+	<div data-role="header">
+	
+	</div>
+
+	<div role="main" class="ui-content">
+	
+	<form class="ui-filterable">
+    <input id="autocomplete-input" data-type="search" placeholder="		Busca una ciudad...">
+	</form>
+	<ul id="autocomplete" data-role="listview" data-inset="true" data-filter="true" data-input="#autocomplete-input"></ul>
+
+	
+	</div>
+
+	<div data-role="footer">
+		
+	</div>
+</div>
+
+<!-- LISTA -->
+
+<div data-role="page" id="lista">
+
+	<div data-role="header">
+	
+	</div>
+
+	<div role="main" class="ui-content">
+	
+	<div data-role="main" class="ui-content" id="listarandom"></div>
+	
+	</div>
+
+	<div data-role="footer">
+		<a href="#buscar"><img src="mas.png" alt="Smiley face" width="10" class="botonmas"></a> 
+	</div>
+</div>
+
+</body>
